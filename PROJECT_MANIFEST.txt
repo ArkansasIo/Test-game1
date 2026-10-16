@@ -1,0 +1,11 @@
+146 files in the uploaded resMgmtGame-0.12 archive.
+
+The archive contains:
+- PHP server implementation
+- PHP/XML-RPC client
+- JavaScript UI dependencies
+- XSL templates and CSS
+- Castle theme
+- LunarColony theme
+
+See the uploaded source archive in the conversation for the complete original payload.
