@@ -1,0 +1,19 @@
+Version 0.12 (Build 73)
+
+	Updated contact information.
+	Re-arranged some includes and added some debugging information to make startup errors easier to diagnose.
+	Updated to use the XSL PHP module vs the XSLT module.
+	Bugfix: SFBugID: 1611167 - Castle theme, Butcher never operational.
+
+Version 0.11 (Build 72)
+
+	Bugfix: SFBugID: 1238712 - Resource graphs break.
+	New Feature: SFRFEID: 1232999	- Multiple Saved Games.
+		The game now supports a configurable number of saved games.  This is a server side configuration option.
+	
+Version 0.10 (Build 67)
+
+	Bugfix: SFBugID: 1235341 - Multiple LunarColony theme fixes.
+	Bugfix: SFBugID: 1233936 - missing parameters to cg_Structure.
+	New Feature: SFRFEID: 1235248 - Client/Server architecture.  The game is now split into a client and server that communicate using XML-RPC.
+		This version appears to work correctly, however some of the logic still needs to be shuffled around between the server and the client.
