@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <title>Resource Management Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><div><strong>RESOURCE MANAGEMENT GAME</strong><span id="status">ONLINE • LOCAL SAVE</span></div><button id="reset" class="danger">Reset</button></header>
+  <main class="layout">
+    <aside class="sidebar">
+      <button class="tab active" data-tab="overview">Overview</button><button class="tab" data-tab="production">Production</button><button class="tab" data-tab="research">Research</button><button class="tab" data-tab="expansion">Expansion</button>
+      <div class="savebox"><b>Cycle</b><span id="cycle">1</span><b>Population</b><span id="population">10</span></div>
+    </aside>
+    <section class="content">
+      <section id="overview" class="panel active"><h1>Colony Command</h1><p class="muted">Build a self-sustaining colony, automate production, research technology and expand across the sector.</p><div id="resources" class="resource-grid"></div><div class="cards"><article><h3>Colony</h3><p>Population: <b id="popCard">10</b></p><p>Housing: <b id="housing">20</b></p><div class="bar"><i id="popbar"></i></div></article><article><h3>Economy</h3><p>Net income is generated every game cycle.</p><p class="good" id="income">+0 / cycle</p></article><article><h3>Objectives</h3><ul id="objectives"></ul></article></div></section>
+      <section id="production" class="panel"><h1>Production</h1><div id="productionList" class="action-grid"></div></section>
+      <section id="research" class="panel"><h1>Research</h1><p class="muted">Research permanently improves your colony.</p><div id="researchList" class="action-grid"></div></section>
+      <section id="expansion" class="panel"><h1>Expansion</h1><div id="expansionList" class="action-grid"></div></section>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
